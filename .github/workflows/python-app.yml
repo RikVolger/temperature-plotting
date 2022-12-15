@@ -15,7 +15,7 @@ permissions:
 jobs:
   test-termperature-plotting:
 
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
     - uses: actions/checkout@v3
