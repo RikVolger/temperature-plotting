@@ -31,6 +31,9 @@ def test_compute_mean():
     
     with pytest.raises(TypeError):
         calc = tpl.compute_mean([None, 2, 0])
+        
+    calc = tpl.compute_mean([0, 2])
+    assert calc == 2
 
 
 def test_create_name():
